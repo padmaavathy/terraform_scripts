@@ -5,7 +5,7 @@ provider "aws" {
    resource "aws_instance" "web" {
         ami = "ami-916f59f4"
         instance_type = "t2.micro"
-        key_name = "padmavathy"
+       # key_name = "padmavathy"
         security_groups= ["JenkinsSG"]
         tags {
          Name = "terraform-instance"
